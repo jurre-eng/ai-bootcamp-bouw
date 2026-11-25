@@ -1,12 +1,125 @@
-<!DOCTYPE html><html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>AI-tweedaagse voor de bouw | CommonBase</title><meta name="description" content="Twee dinsdagen met maximaal tien bouwbedrijven: je kantoorprocessen slimmer maken met AI en sparren met mensen die hetzelfde werk doen. 23 en 30 maart 2027, €1.250 ex btw per persoon."><meta name="robots" content="noindex"><link rel="preload" href="fonts/SpaceGrotesk-latin.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="fonts/Inter-latin.woff2" as="font" type="font/woff2" crossorigin><link rel="icon" href="favicon.ico"><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="apple-touch-icon.png"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="AI-adoptie voor MKB in 30 dagen | CommonBase"><meta name="twitter:description" content="In 30 dagen bouwt iedereen in je team zijn eigen AI-oplossing in Copilot, ChatGPT of Claude. CommonBase neemt je mensen mee, van koploper tot scepticus. Plan een adviesgesprek."><meta name="twitter:image" content="https://commonbase.nl/thema/og-default.jpg"><meta name="facebook-domain-verification" content="rez85d4mtfvy8kikyjraojakcpprp7"><link rel="stylesheet" href="css/basis.css"><style>
-.cb-bouw-eyebrow{font-family:var(--cb-font-mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--cb-red);margin:0 0 18px}
-.cb-page-hero .cb-hero__cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
-.cb-page-hero .cb-hero__meta{margin-top:40px}
-.cb-bouw-punten{margin-top:56px}
-.cb-bouw-editie{margin:6px 0 22px;color:var(--cb-ink-60);font-size:15px}
-.cb-bouw-editie b{color:var(--cb-ink)}
-.cb-side-card__clock .u{font-size:16px}
-</style></head><body class="home page"><a class="cb-skip-link" href="#cb-main">Spring naar hoofdinhoud</a><nav class="cb-nav" data-cb-nav><div class="cb-nav__inner"><a href="https://commonbase.nl/" class="cb-brand"><img class="cb-brand__mark" src="img/commonbase-mark.png" alt="" width="300" height="166" decoding="async" fetchpriority="high">CommonBase</a><div class="cb-nav__links"><a href="https://commonbase.nl/ai-voor-adviesbureaus/">Adviesbureaus</a><a href="https://commonbase.nl/ai-voor-bouw-en-installatie/">Bouw &amp; installatie</a><a href="https://commonbase.nl/ai-voor-it-partners/">IT-partners</a><a href="https://commonbase.nl/kennisbank/">Kennisbank</a><a href="https://commonbase.nl/prijzen/">Prijzen</a><a href="https://commonbase.nl/over-ons/">Over ons</a><a href="https://commonbase.nl/contact/">Contact</a></div><div class="cb-nav__cta cb-nav__ctas"><a href="#boeken" class="cb-btn cb-btn--ink cb-btn--sm cb-lp-cta-contact">Plek reserveren</a></div><button type="button" class="cb-nav__burger" aria-label="Menu" aria-expanded="false" data-cb-nav-toggle><span></span><span></span><span></span></button></div><div class="cb-nav__sheet" data-cb-nav-sheet><a href="https://commonbase.nl/ai-voor-adviesbureaus/">Adviesbureaus</a><a href="https://commonbase.nl/ai-voor-bouw-en-installatie/">Bouw &amp; installatie</a><a href="https://commonbase.nl/ai-voor-it-partners/">IT-partners</a><a href="https://commonbase.nl/kennisbank/">Kennisbank</a><a href="https://commonbase.nl/prijzen/">Prijzen</a><a href="https://commonbase.nl/over-ons/">Over ons</a><a href="https://commonbase.nl/contact/">Contact</a><a href="#boeken" class="cb-btn cb-btn--ink">Plek reserveren &rarr;</a></div></nav><script>
+<!DOCTYPE html><html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>AI-tweedaagse voor de bouw | CommonBase</title><meta name="description" content="Twee dinsdagen met maximaal tien bouwbedrijven: je kantoorprocessen slimmer maken met AI en sparren met mensen die hetzelfde werk doen. 23 en 30 maart 2027, €1.250 ex btw per persoon."><meta name="robots" content="noindex"><link rel="preload" href="fonts/SpaceGrotesk-latin.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="fonts/Inter-latin.woff2" as="font" type="font/woff2" crossorigin><link rel="icon" href="favicon.ico"><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="apple-touch-icon.png"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="AI-adoptie voor MKB in 30 dagen | CommonBase"><meta name="twitter:description" content="In 30 dagen bouwt iedereen in je team zijn eigen AI-oplossing in Copilot, ChatGPT of Claude. CommonBase neemt je mensen mee, van koploper tot scepticus. Plan een adviesgesprek."><meta name="twitter:image" content="https://commonbase.nl/thema/og-default.jpg"><meta name="facebook-domain-verification" content="rez85d4mtfvy8kikyjraojakcpprp7"><link rel="stylesheet" href="css/basis.css"><style>/* Bouwpagina: eigen opbouw, gebouwd op de tokens en patronen van commonbase.nl
+   (mist-vlakken, ronde kaarten, roze-naar-rood reeks, mono-labels, rode tweede helft in koppen). */
+.bw-sec { padding: 96px 0; }
+.bw-label { font-family: var(--cb-font-mono); font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--cb-red); margin: 0 0 14px; }
+.bw-title { font-family: var(--cb-font-display); font-size: var(--cb-fs-display-3); line-height: 1.05; letter-spacing: -.025em; font-weight: 600; text-wrap: balance; margin: 0; }
+.bw-title em { color: var(--cb-red); font-style: normal; }
+.bw-lead { color: var(--cb-ink-60); font-size: 18px; line-height: 1.55; margin: 18px 0 0; max-width: 60ch; }
+.bw-head { max-width: 760px; margin-bottom: 48px; }
+.bw-split { display: grid; gap: 48px; align-items: start; }
+@media (min-width: 981px) { .bw-split { grid-template-columns: 1fr 1fr; gap: 80px; } .bw-split--tafel { align-items: center; } }
+
+/* hero */
+.bw-hero { padding: 72px 0 88px; position: relative; }
+.bw-hero__grid { display: grid; gap: 56px; align-items: center; }
+@media (min-width: 981px) { .bw-hero__grid { grid-template-columns: 1.1fr .9fr; gap: 64px; } .bw-hero { padding: 96px 0 112px; } }
+.bw-chip { display: inline-flex; align-items: center; gap: 10px; padding: 8px 14px; border-radius: 999px; background: #fde6eb; color: var(--cb-ink); font-family: var(--cb-font-mono); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; }
+.bw-chip i { width: 8px; height: 8px; border-radius: 50%; background: var(--cb-red); box-shadow: 0 0 0 4px #ed3e5b33; }
+.bw-hero__title { font-family: var(--cb-font-display); font-size: clamp(40px, 5vw, 68px); line-height: 1; letter-spacing: -.035em; font-weight: 600; margin: 24px 0 0; text-wrap: balance; }
+.bw-hero__title span { color: var(--cb-red); }
+.bw-hero__intro { font-size: var(--cb-fs-lead); color: var(--cb-ink-60); line-height: 1.55; margin: 24px 0 0; max-width: 54ch; }
+.bw-hero__cta { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 28px; margin-top: 32px; }
+.bw-link { color: var(--cb-ink); font-weight: 600; text-decoration: none; border-bottom: 1.5px solid var(--cb-red); padding-bottom: 2px; }
+.bw-link:hover { color: var(--cb-red); }
+.bw-ticket { display: grid; grid-template-columns: repeat(3, auto); justify-content: start; gap: 0; margin: 40px 0 0; border: 1px solid var(--cb-ink-15); border-radius: 16px; overflow: hidden; background: var(--cb-paper); box-shadow: var(--cb-shadow-float); max-width: 100%; }
+.bw-ticket > div { padding: 16px 22px; border-left: 1px dashed var(--cb-ink-15); min-width: 0; }
+.bw-ticket > div:first-child { border-left: 0; }
+.bw-ticket dt { font-family: var(--cb-font-mono); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--cb-ink-60); }
+.bw-ticket dd { margin: 4px 0 0; font-family: var(--cb-font-display); font-size: 19px; font-weight: 600; letter-spacing: -.01em; }
+.bw-ticket small { font-family: var(--cb-font-body); font-size: 13px; font-weight: 400; color: var(--cb-ink-60); }
+@media (max-width: 640px) { .bw-ticket { grid-template-columns: 1fr; } .bw-ticket > div { border-left: 0; border-top: 1px dashed var(--cb-ink-15); } .bw-ticket > div:first-child { border-top: 0; } }
+
+/* voor wie */
+.bw-wie__lists { display: grid; gap: 28px; }
+.bw-wie__lists h3 { font-family: var(--cb-font-mono); font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--cb-ink-60); font-weight: 500; margin: 0 0 12px; }
+.bw-tags { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 10px; }
+.bw-tags li { padding: 10px 16px; border-radius: 999px; background: var(--cb-mist); font-weight: 500; font-size: 15px; transition: background .2s, color .2s, transform .2s; }
+.bw-tags li:hover { background: var(--cb-red); color: #fff; transform: translateY(-2px); }
+.bw-niet { margin: 4px 0 0; padding: 18px 20px; border-radius: 16px; border: 1px dashed var(--cb-ink-15); color: var(--cb-ink-60); font-size: 15px; }
+.bw-niet b { color: var(--cb-ink); }
+
+/* processen */
+.bw-procs { display: grid; gap: 20px; grid-template-columns: 1fr; }
+@media (min-width: 700px) { .bw-procs { grid-template-columns: 1fr 1fr; } }
+@media (min-width: 1080px) { .bw-procs { grid-template-columns: repeat(3, 1fr); } }
+.bw-proc { background: var(--cb-paper); border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 14px; min-height: 230px; transition: transform .35s cubic-bezier(.16,1,.3,1), box-shadow .35s, background .35s; }
+.bw-proc:hover { transform: translateY(-4px); box-shadow: var(--cb-shadow-float); background: #fde6eb; }
+.bw-proc__tag { align-self: flex-start; font-family: var(--cb-font-mono); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--cb-red); }
+.bw-proc h3 { font-family: var(--cb-font-display); font-size: 23px; line-height: 1.15; letter-spacing: -.02em; font-weight: 600; margin: 0; text-wrap: balance; }
+.bw-proc__proof { margin: auto 0 0; padding-top: 16px; border-top: 1px solid var(--cb-ink-08); font-size: 15px; line-height: 1.45; }
+.bw-proc__proof span { display: block; margin-top: 6px; font-family: var(--cb-font-mono); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--cb-ink-60); }
+.bw-proc__hint { margin: auto 0 0; padding-top: 16px; border-top: 1px dashed var(--cb-ink-15); color: var(--cb-ink-60); font-size: 14px; }
+
+/* tijdlijn */
+.bw-line { list-style: none; margin: 0; padding: 0; display: grid; gap: 20px; }
+@media (min-width: 1000px) { .bw-line { grid-template-columns: 1.2fr .9fr 1.2fr .9fr; align-items: stretch; } }
+.bw-step { border-radius: 20px; padding: 28px; background: var(--cb-mist); position: relative; display: flex; flex-direction: column; gap: 10px; transition: transform .35s cubic-bezier(.16,1,.3,1); }
+.bw-step:hover { transform: translateY(-4px); }
+.bw-step--dag { background: #f9c6d0; }
+.bw-step--dag:nth-child(3) { background: var(--cb-red); color: #fff; }
+.bw-step--na { background: var(--cb-paper); border: 1px solid var(--cb-ink-15); }
+.bw-step__when { font-family: var(--cb-font-mono); font-size: 12px; letter-spacing: .1em; text-transform: uppercase; }
+.bw-step h3 { font-family: var(--cb-font-display); font-size: 26px; letter-spacing: -.02em; font-weight: 600; line-height: 1.1; margin: 0; }
+.bw-step p { margin: 0; font-size: 15px; line-height: 1.55; color: var(--cb-ink-60); }
+.bw-step ul { list-style: none; margin: 4px 0 0; padding: 0; display: grid; gap: 8px; font-size: 15px; }
+.bw-step li { padding-left: 18px; position: relative; }
+.bw-step li::before { content: ""; position: absolute; left: 0; top: .72em; width: 10px; height: 1.5px; background: currentColor; opacity: .7; }
+.bw-step .bw-step__out { margin-top: auto; padding-top: 14px; border-top: 1px solid #07071f26; color: inherit; font-weight: 600; }
+.bw-step--dag:nth-child(3) p, .bw-step--dag:nth-child(3) .bw-step__out { color: #fff; border-color: #ffffff59; }
+
+/* tafel */
+.bw-tafel { position: relative; width: min(100%, 420px); aspect-ratio: 1; margin: 0 auto; }
+.bw-tafel__blad { position: absolute; inset: 22%; border-radius: 50%; background: var(--cb-paper); box-shadow: var(--cb-shadow-float); display: grid; place-content: center; text-align: center; }
+.bw-tafel__blad b { font-family: var(--cb-font-display); font-size: clamp(56px, 8vw, 88px); line-height: 1; letter-spacing: -.04em; color: var(--cb-red); }
+.bw-tafel__blad span { font-family: var(--cb-font-mono); font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--cb-ink-60); }
+.bw-tafel i { position: absolute; left: 50%; top: 50%; width: 15%; aspect-ratio: 1; margin: -7.5% 0 0 -7.5%; border-radius: 50%; background: #f9c6d0; border: 3px solid var(--cb-paper); transform: rotate(var(--a)) translateY(-205%) ; transition: background .25s, transform .35s cubic-bezier(.16,1,.3,1); }
+.bw-tafel:hover i { background: var(--cb-red); }
+.bw-tafel i:nth-child(odd) { background: #f49aac; }
+.bw-punten { list-style: none; margin: 28px 0 0; padding: 0; display: grid; gap: 16px; }
+.bw-punten li { padding: 18px 20px; border-radius: 16px; background: var(--cb-paper); font-size: 15px; line-height: 1.5; color: var(--cb-ink-60); }
+.bw-punten b { color: var(--cb-ink); display: block; font-family: var(--cb-font-display); font-size: 18px; letter-spacing: -.01em; margin-bottom: 2px; }
+
+/* quotes */
+.bw-quotes { display: grid; gap: 20px; }
+@media (min-width: 981px) { .bw-quotes { grid-template-columns: 1.3fr 1fr; } }
+.bw-quote__body { color: var(--cb-ink-60); margin: -8px 0 0; font-size: 15px; line-height: 1.55; }
+
+/* team */
+.bw-team { display: grid; gap: 20px; }
+@media (min-width: 760px) { .bw-team { grid-template-columns: 1fr 1fr; } }
+.bw-person { margin: 0; display: grid; grid-template-columns: 120px 1fr; gap: 20px; align-items: center; background: var(--cb-paper); border-radius: 20px; padding: 20px; }
+.bw-person img { width: 120px; height: 120px; object-fit: cover; border-radius: 14px; transition: transform .4s cubic-bezier(.16,1,.3,1); }
+.bw-person:hover img { transform: scale(1.04) rotate(-1.5deg); }
+.bw-person b { font-family: var(--cb-font-display); font-size: 21px; letter-spacing: -.01em; display: block; }
+.bw-person span { font-family: var(--cb-font-mono); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--cb-red); }
+.bw-person p { margin: 8px 0 0; color: var(--cb-ink-60); font-size: 14px; line-height: 1.55; }
+
+/* aanmelden */
+.bw-book { display: grid; gap: 40px; align-items: start; }
+@media (min-width: 981px) { .bw-book { grid-template-columns: .95fr 1.05fr; gap: 64px; } }
+.bw-prakt__list { margin: 32px 0 0; display: grid; }
+.bw-prakt__list > div { display: grid; grid-template-columns: 120px 1fr; gap: 16px; padding: 14px 0; border-top: 1px solid var(--cb-ink-08); }
+.bw-prakt__list dt { font-family: var(--cb-font-mono); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--cb-ink-60); padding-top: 3px; }
+.bw-prakt__list dd { margin: 0; font-size: 15px; line-height: 1.5; min-width: 0; }
+.bw-garantie { margin: 24px 0 0; padding: 18px 20px; border-radius: 16px; background: #fde6eb; font-size: 15px; line-height: 1.5; }
+.bw-garantie b { color: var(--cb-red); }
+.bw-form { background: var(--cb-mist); border-radius: 24px; padding: 36px; }
+@media (max-width: 640px) { .bw-form { padding: 24px; } .bw-prakt__list > div { grid-template-columns: 1fr; gap: 4px; } }
+.bw-form__title { font-family: var(--cb-font-display); font-size: 30px; letter-spacing: -.02em; font-weight: 600; margin: 0; }
+.bw-form__sub { color: var(--cb-ink-60); margin: 6px 0 20px; font-size: 15px; }
+.bw-form .cb-btn--primary { width: 100%; justify-content: center; }
+
+.bw-faqs { max-width: 860px; }
+
+/* vaste knop op mobiel */
+.bw-stick { position: fixed; left: 0; right: 0; bottom: 0; z-index: 50; display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 10px max(16px, env(safe-area-inset-right, 0px)) calc(10px + env(safe-area-inset-bottom, 0px)) max(16px, env(safe-area-inset-left, 0px)); background: #ffffffF5; border-top: 1px solid var(--cb-ink-08); box-shadow: 0 -8px 24px -12px #07071f40; transform: translateY(110%); transition: transform .25s ease; }
+.bw-stick.show { transform: none; }
+.bw-stick small { display: block; color: var(--cb-ink-60); font-size: 12px; }
+.bw-stick b { font-family: var(--cb-font-display); font-size: 17px; }
+.bw-stick .cb-btn { font-size: 15px; padding: 12px 16px; min-height: 0; }
+@media (min-width: 981px) { .bw-stick { display: none; } }
+@media (prefers-reduced-motion: reduce) { .bw-proc, .bw-step, .bw-tafel i, .bw-person img, .bw-tags li { transition: none; } }
+</style></head><body class="home page"><a class="cb-skip-link" href="#cb-main">Spring naar hoofdinhoud</a><nav class="cb-nav" data-cb-nav><div class="cb-nav__inner"><a href="https://commonbase.nl/" class="cb-brand"><img class="cb-brand__mark" src="img/commonbase-mark.png" alt="" width="300" height="166" decoding="async" fetchpriority="high">CommonBase</a><div class="cb-nav__links"><a href="https://commonbase.nl/ai-voor-adviesbureaus/">Adviesbureaus</a><a href="https://commonbase.nl/ai-voor-bouw-en-installatie/">Bouw &amp; installatie</a><a href="https://commonbase.nl/ai-voor-it-partners/">IT-partners</a><a href="https://commonbase.nl/kennisbank/">Kennisbank</a><a href="https://commonbase.nl/prijzen/">Prijzen</a><a href="https://commonbase.nl/over-ons/">Over ons</a><a href="https://commonbase.nl/contact/">Contact</a></div><div class="cb-nav__cta cb-nav__ctas"><a href="#aanmelden" class="cb-btn cb-btn--ink cb-btn--sm cb-lp-cta-contact">Plek reserveren</a></div><button type="button" class="cb-nav__burger" aria-label="Menu" aria-expanded="false" data-cb-nav-toggle><span></span><span></span><span></span></button></div><div class="cb-nav__sheet" data-cb-nav-sheet><a href="https://commonbase.nl/ai-voor-adviesbureaus/">Adviesbureaus</a><a href="https://commonbase.nl/ai-voor-bouw-en-installatie/">Bouw &amp; installatie</a><a href="https://commonbase.nl/ai-voor-it-partners/">IT-partners</a><a href="https://commonbase.nl/kennisbank/">Kennisbank</a><a href="https://commonbase.nl/prijzen/">Prijzen</a><a href="https://commonbase.nl/over-ons/">Over ons</a><a href="https://commonbase.nl/contact/">Contact</a><a href="#aanmelden" class="cb-btn cb-btn--ink">Plek reserveren &rarr;</a></div></nav><script>
 ( function () {
   const nav = document.querySelector( '[data-cb-nav]' );
   if ( ! nav ) return;
@@ -56,23 +169,23 @@
     }
   } );
 } )();
-</script><main id="cb-main" class="cb-page"><section class="cb-page-hero cb-page-hero--depth">
-  <div class="cb-wrap cb-page-hero__grid">
-    <div>
-      <p class="cb-bouw-eyebrow">AI-tweedaagse voor de bouw · dinsdag 23 en 30 maart 2027</p>
-      <h1 class="cb-page-hero__title">Samen met andere bouwbedrijven <span class="cb-red">slimmer werken met AI.</span></h1>
-      <p class="cb-page-hero__intro">Calculatie, offertes vergelijken, planning, inkoop. Op twee dinsdagen kies je het proces dat jou de meeste uren kost en bouw je er een werkende AI-oplossing voor. Aan tafel zitten maximaal negen andere bouwbedrijven die precies tegen hetzelfde aanlopen.</p>
-      <div class="cb-hero__cta">
-        <a href="#boeken" class="cb-btn cb-btn--primary">Reserveer je plek <span class="arrow">&rarr;</span></a>
-        <a href="#programma" class="cb-btn cb-btn--ghost">Bekijk het programma <span class="arrow">&rarr;</span></a>
+</script><main id="cb-main" class="cb-page"><section class="bw-hero cb-page-hero--depth">
+  <div class="cb-wrap bw-hero__grid">
+    <div class="bw-hero__copy">
+      <span class="bw-chip"><i></i>AI-tweedaagse · alleen voor de bouw</span>
+      <h1 class="bw-hero__title">Twee dinsdagen bouwen aan AI, <span>samen met andere bouwbedrijven.</span></h1>
+      <p class="bw-hero__intro">Je kiest het kantoorproces dat jou de meeste uren kost, zoals calculatie, planning of meerwerk, en gaat naar huis met een werkende AI-oplossing. Met maximaal negen andere bouwbedrijven aan tafel om mee te sparren.</p>
+      <div class="bw-hero__cta">
+        <a href="#aanmelden" class="cb-btn cb-btn--primary">Reserveer je plek <span class="arrow">&rarr;</span></a>
+        <a href="#programma" class="bw-link">Bekijk de twee dagen <span class="arrow">&rarr;</span></a>
       </div>
-      <div class="cb-hero__meta">
-        <div class="m"><b>23 + 30 mrt</b><span>twee dinsdagen, 2027</span></div>
-        <div class="m"><b>Max. 10</b><span>bouwbedrijven aan tafel</span></div>
-        <div class="m"><b>€1.250</b><span>ex btw per persoon</span></div>
-      </div>
+      <dl class="bw-ticket">
+        <div><dt>Wanneer</dt><dd>di 23 + di 30 maart 2027</dd></div>
+        <div><dt>Groep</dt><dd>max. 10 deelnemers</dd></div>
+        <div><dt>Investering</dt><dd>€1.250 <small>ex btw p.p.</small></dd></div>
+      </dl>
     </div>
-    <div class="cb-page-hero__layers cb-page-hero__layers--3">
+    <div class="cb-page-hero__layers cb-page-hero__layers--3 bw-hero__photos">
       <figure class="cb-page-hero__layer l1" data-depth="18"><img src="img/Niels-tijdens-training.DJldsZ--_Z1yyQVy.webp" alt="Niels Sonneveld tijdens een training" width="1200" height="900" fetchpriority="high" decoding="async" /></figure>
       <figure class="cb-page-hero__layer l2" data-depth="34"><img src="img/ai-bootcamp-groep-certificaten-tipi.DRtBFRMA_Z2w1EVV.webp" alt="Deelnemers van een eerdere tweedaagse met hun certificaat" width="1200" height="900" decoding="async" /></figure>
       <figure class="cb-page-hero__layer l3" data-depth="10"><img src="img/AI-trainer-Lucas-1.CJhCHCST_Z2uVl5F.webp" alt="Lucas Doornhein als trainer" width="1200" height="900" decoding="async" /></figure>
@@ -80,288 +193,226 @@
   </div>
 </section>
 
-<div class="cb-marquee-bar wp-block-commonbase-marquee" aria-hidden="true">
-  <span class="cb-marquee-bar__label">38 teams gingen je voor.</span>
-  <div class="cb-marquee-bar__track">
-          <span class="cb-client-logo cb-client-logo--beeld"><img src="img/kobout.B167nUzN_Z28NCf3.webp" alt="Kobout" width="85" height="22" loading="lazy" decoding="async" /></span>
-          <span class="cb-client-logo cb-client-logo--beeld"><img src="img/mr-green.BVpyHydF_Z1j0gWb.webp" alt="Mr. Green" width="38" height="22" loading="lazy" decoding="async" /></span>
-          <span class="cb-client-logo cb-client-logo--beeld"><img src="img/bureau-van-den-oever.BTflJ61u_Z1RXtGI.webp" alt="Bureau van den Oever" width="80" height="22" loading="lazy" decoding="async" /></span>
-          <span class="cb-client-logo cb-client-logo--beeld"><img src="img/netos.UVu1c0RB_2u1Jpi.webp" alt="NetOS" width="44" height="22" loading="lazy" decoding="async" /></span>
-          <span class="cb-client-logo cb-client-logo--beeld"><img src="img/cmc.CNp5filT_Z2syEue.webp" alt="CMC Bedrijfsmakelaars" width="48" height="22" loading="lazy" decoding="async" /></span>
-          <span class="cb-client-logo cb-client-logo--beeld"><img src="img/bruil-beton.RWmoHTxD_ABvfx.webp" alt="Bruil Beton" width="67" height="22" loading="lazy" decoding="async" /></span>
-          <span class="cb-client-logo cb-client-logo--beeld"><img src="img/polman-bouwbedrijf.Ds-CSla8_Z1aYF0E.webp" alt="Polman Bouwbedrijf" width="30" height="22" loading="lazy" decoding="async" /></span>
-          <span class="cb-client-logo">J.G. Timmer</span>
-          <span class="cb-client-logo cb-client-logo--beeld"><img src="img/hardeman-van-harten.CTg0kmqY_Z233zJz.webp" alt="Hardeman van Harten" width="60" height="22" loading="lazy" decoding="async" /></span>
-          <span class="cb-client-logo cb-client-logo--beeld"><img src="img/247-tailorsteel.CxczsogX_1u96fy.webp" alt="24/7 TailorSteel" width="83" height="22" loading="lazy" decoding="async" /></span>
-          <span class="cb-client-logo cb-client-logo--beeld"><img src="img/dreaver.VYiIvSiT_xqO7e.webp" alt="Dreaver" width="102" height="22" loading="lazy" decoding="async" /></span>
-          <span class="cb-client-logo cb-client-logo--beeld"><img src="img/buse-group.nsdNKz3y_s3Den.webp" alt="Buse Group" width="27" height="22" loading="lazy" decoding="async" /></span>
-          <span class="cb-client-logo cb-client-logo--beeld"><img src="img/kubiek.C79zAJVo_jgD19.webp" alt="Kubiek" width="28" height="22" loading="lazy" decoding="async" /></span>
-          <span class="cb-client-logo cb-client-logo--beeld"><img src="img/kempiq.CCFWs3Jw_Z12O4CC.webp" alt="Kempíq" width="42" height="22" loading="lazy" decoding="async" /></span>
-          <span class="cb-client-logo cb-client-logo--beeld"><img src="img/wedoit-marketing.B3iwgOak_Z24DwML.webp" alt="WeDoIt Marketing" width="77" height="22" loading="lazy" decoding="async" /></span>
-          <span class="cb-client-logo cb-client-logo--beeld"><img src="img/starcode.rNb-JlK8_ZgGfOY.webp" alt="Starcode" width="132" height="22" loading="lazy" decoding="async" /></span>
-          <span class="cb-client-logo cb-client-logo--beeld"><img src="img/kobout.B167nUzN_Z28NCf3.webp" alt="Kobout" width="85" height="22" loading="lazy" decoding="async" /></span>
-          <span class="cb-client-logo cb-client-logo--beeld"><img src="img/mr-green.BVpyHydF_Z1j0gWb.webp" alt="Mr. Green" width="38" height="22" loading="lazy" decoding="async" /></span>
-          <span class="cb-client-logo cb-client-logo--beeld"><img src="img/bureau-van-den-oever.BTflJ61u_Z1RXtGI.webp" alt="Bureau van den Oever" width="80" height="22" loading="lazy" decoding="async" /></span>
-          <span class="cb-client-logo cb-client-logo--beeld"><img src="img/netos.UVu1c0RB_2u1Jpi.webp" alt="NetOS" width="44" height="22" loading="lazy" decoding="async" /></span>
-          <span class="cb-client-logo cb-client-logo--beeld"><img src="img/cmc.CNp5filT_Z2syEue.webp" alt="CMC Bedrijfsmakelaars" width="48" height="22" loading="lazy" decoding="async" /></span>
-          <span class="cb-client-logo cb-client-logo--beeld"><img src="img/bruil-beton.RWmoHTxD_ABvfx.webp" alt="Bruil Beton" width="67" height="22" loading="lazy" decoding="async" /></span>
-          <span class="cb-client-logo cb-client-logo--beeld"><img src="img/polman-bouwbedrijf.Ds-CSla8_Z1aYF0E.webp" alt="Polman Bouwbedrijf" width="30" height="22" loading="lazy" decoding="async" /></span>
-          <span class="cb-client-logo">J.G. Timmer</span>
-          <span class="cb-client-logo cb-client-logo--beeld"><img src="img/hardeman-van-harten.CTg0kmqY_Z233zJz.webp" alt="Hardeman van Harten" width="60" height="22" loading="lazy" decoding="async" /></span>
-          <span class="cb-client-logo cb-client-logo--beeld"><img src="img/247-tailorsteel.CxczsogX_1u96fy.webp" alt="24/7 TailorSteel" width="83" height="22" loading="lazy" decoding="async" /></span>
-          <span class="cb-client-logo cb-client-logo--beeld"><img src="img/dreaver.VYiIvSiT_xqO7e.webp" alt="Dreaver" width="102" height="22" loading="lazy" decoding="async" /></span>
-          <span class="cb-client-logo cb-client-logo--beeld"><img src="img/buse-group.nsdNKz3y_s3Den.webp" alt="Buse Group" width="27" height="22" loading="lazy" decoding="async" /></span>
-          <span class="cb-client-logo cb-client-logo--beeld"><img src="img/kubiek.C79zAJVo_jgD19.webp" alt="Kubiek" width="28" height="22" loading="lazy" decoding="async" /></span>
-          <span class="cb-client-logo cb-client-logo--beeld"><img src="img/kempiq.CCFWs3Jw_Z12O4CC.webp" alt="Kempíq" width="42" height="22" loading="lazy" decoding="async" /></span>
-          <span class="cb-client-logo cb-client-logo--beeld"><img src="img/wedoit-marketing.B3iwgOak_Z24DwML.webp" alt="WeDoIt Marketing" width="77" height="22" loading="lazy" decoding="async" /></span>
-          <span class="cb-client-logo cb-client-logo--beeld"><img src="img/starcode.rNb-JlK8_ZgGfOY.webp" alt="Starcode" width="132" height="22" loading="lazy" decoding="async" /></span>
-          <span class="cb-client-logo cb-client-logo--beeld"><img src="img/kobout.B167nUzN_Z28NCf3.webp" alt="Kobout" width="85" height="22" loading="lazy" decoding="async" /></span>
-          <span class="cb-client-logo cb-client-logo--beeld"><img src="img/mr-green.BVpyHydF_Z1j0gWb.webp" alt="Mr. Green" width="38" height="22" loading="lazy" decoding="async" /></span>
-          <span class="cb-client-logo cb-client-logo--beeld"><img src="img/bureau-van-den-oever.BTflJ61u_Z1RXtGI.webp" alt="Bureau van den Oever" width="80" height="22" loading="lazy" decoding="async" /></span>
-          <span class="cb-client-logo cb-client-logo--beeld"><img src="img/netos.UVu1c0RB_2u1Jpi.webp" alt="NetOS" width="44" height="22" loading="lazy" decoding="async" /></span>
-          <span class="cb-client-logo cb-client-logo--beeld"><img src="img/cmc.CNp5filT_Z2syEue.webp" alt="CMC Bedrijfsmakelaars" width="48" height="22" loading="lazy" decoding="async" /></span>
-          <span class="cb-client-logo cb-client-logo--beeld"><img src="img/bruil-beton.RWmoHTxD_ABvfx.webp" alt="Bruil Beton" width="67" height="22" loading="lazy" decoding="async" /></span>
-          <span class="cb-client-logo cb-client-logo--beeld"><img src="img/polman-bouwbedrijf.Ds-CSla8_Z1aYF0E.webp" alt="Polman Bouwbedrijf" width="30" height="22" loading="lazy" decoding="async" /></span>
-          <span class="cb-client-logo">J.G. Timmer</span>
-          <span class="cb-client-logo cb-client-logo--beeld"><img src="img/hardeman-van-harten.CTg0kmqY_Z233zJz.webp" alt="Hardeman van Harten" width="60" height="22" loading="lazy" decoding="async" /></span>
-          <span class="cb-client-logo cb-client-logo--beeld"><img src="img/247-tailorsteel.CxczsogX_1u96fy.webp" alt="24/7 TailorSteel" width="83" height="22" loading="lazy" decoding="async" /></span>
-          <span class="cb-client-logo cb-client-logo--beeld"><img src="img/dreaver.VYiIvSiT_xqO7e.webp" alt="Dreaver" width="102" height="22" loading="lazy" decoding="async" /></span>
-          <span class="cb-client-logo cb-client-logo--beeld"><img src="img/buse-group.nsdNKz3y_s3Den.webp" alt="Buse Group" width="27" height="22" loading="lazy" decoding="async" /></span>
-          <span class="cb-client-logo cb-client-logo--beeld"><img src="img/kubiek.C79zAJVo_jgD19.webp" alt="Kubiek" width="28" height="22" loading="lazy" decoding="async" /></span>
-          <span class="cb-client-logo cb-client-logo--beeld"><img src="img/kempiq.CCFWs3Jw_Z12O4CC.webp" alt="Kempíq" width="42" height="22" loading="lazy" decoding="async" /></span>
-          <span class="cb-client-logo cb-client-logo--beeld"><img src="img/wedoit-marketing.B3iwgOak_Z24DwML.webp" alt="WeDoIt Marketing" width="77" height="22" loading="lazy" decoding="async" /></span>
-          <span class="cb-client-logo cb-client-logo--beeld"><img src="img/starcode.rNb-JlK8_ZgGfOY.webp" alt="Starcode" width="132" height="22" loading="lazy" decoding="async" /></span>
-          <span class="cb-client-logo cb-client-logo--beeld"><img src="img/kobout.B167nUzN_Z28NCf3.webp" alt="Kobout" width="85" height="22" loading="lazy" decoding="async" /></span>
-          <span class="cb-client-logo cb-client-logo--beeld"><img src="img/mr-green.BVpyHydF_Z1j0gWb.webp" alt="Mr. Green" width="38" height="22" loading="lazy" decoding="async" /></span>
-          <span class="cb-client-logo cb-client-logo--beeld"><img src="img/bureau-van-den-oever.BTflJ61u_Z1RXtGI.webp" alt="Bureau van den Oever" width="80" height="22" loading="lazy" decoding="async" /></span>
-          <span class="cb-client-logo cb-client-logo--beeld"><img src="img/netos.UVu1c0RB_2u1Jpi.webp" alt="NetOS" width="44" height="22" loading="lazy" decoding="async" /></span>
-          <span class="cb-client-logo cb-client-logo--beeld"><img src="img/cmc.CNp5filT_Z2syEue.webp" alt="CMC Bedrijfsmakelaars" width="48" height="22" loading="lazy" decoding="async" /></span>
-          <span class="cb-client-logo cb-client-logo--beeld"><img src="img/bruil-beton.RWmoHTxD_ABvfx.webp" alt="Bruil Beton" width="67" height="22" loading="lazy" decoding="async" /></span>
-          <span class="cb-client-logo cb-client-logo--beeld"><img src="img/polman-bouwbedrijf.Ds-CSla8_Z1aYF0E.webp" alt="Polman Bouwbedrijf" width="30" height="22" loading="lazy" decoding="async" /></span>
-          <span class="cb-client-logo">J.G. Timmer</span>
-          <span class="cb-client-logo cb-client-logo--beeld"><img src="img/hardeman-van-harten.CTg0kmqY_Z233zJz.webp" alt="Hardeman van Harten" width="60" height="22" loading="lazy" decoding="async" /></span>
-          <span class="cb-client-logo cb-client-logo--beeld"><img src="img/247-tailorsteel.CxczsogX_1u96fy.webp" alt="24/7 TailorSteel" width="83" height="22" loading="lazy" decoding="async" /></span>
-          <span class="cb-client-logo cb-client-logo--beeld"><img src="img/dreaver.VYiIvSiT_xqO7e.webp" alt="Dreaver" width="102" height="22" loading="lazy" decoding="async" /></span>
-          <span class="cb-client-logo cb-client-logo--beeld"><img src="img/buse-group.nsdNKz3y_s3Den.webp" alt="Buse Group" width="27" height="22" loading="lazy" decoding="async" /></span>
-          <span class="cb-client-logo cb-client-logo--beeld"><img src="img/kubiek.C79zAJVo_jgD19.webp" alt="Kubiek" width="28" height="22" loading="lazy" decoding="async" /></span>
-          <span class="cb-client-logo cb-client-logo--beeld"><img src="img/kempiq.CCFWs3Jw_Z12O4CC.webp" alt="Kempíq" width="42" height="22" loading="lazy" decoding="async" /></span>
-          <span class="cb-client-logo cb-client-logo--beeld"><img src="img/wedoit-marketing.B3iwgOak_Z24DwML.webp" alt="WeDoIt Marketing" width="77" height="22" loading="lazy" decoding="async" /></span>
-          <span class="cb-client-logo cb-client-logo--beeld"><img src="img/starcode.rNb-JlK8_ZgGfOY.webp" alt="Starcode" width="132" height="22" loading="lazy" decoding="async" /></span>
-      </div>
-</div>
-
-<section class="cb-section cb-section--blok cb-problem--notes">
-  <div class="cb-wrap">
-    <div class="cb-problem__grid">
+<section class="cb-section bw-sec bw-wie">
+  <div class="cb-wrap bw-split">
+    <div>
+      <p class="bw-label">Voor wie</p>
+      <h2 class="bw-title">Voor wie in de bouw <em>op kantoor de uren maakt.</em></h2>
+      <p class="bw-lead">Je hoeft niet technisch te zijn. Je moet wel weten welk werk je elke week tegenhoudt, en zin hebben om er zelf iets voor te bouwen.</p>
+    </div>
+    <div class="bw-wie__lists">
       <div>
-        <h2 class="cb-problem__title">De winst zit niet op de bouw. <em>Die lekt weg op kantoor.</em></h2>
-        <p class="cb-problem__lede">Het werk op de bouwplaats loopt. Maar ’s avonds zit iemand nog offertes over te typen, een planning in elkaar te zetten of meerwerk na te rekenen. Dat is precies het werk waar AI goed in is. Wat we bij bouwbedrijven het vaakst horen:</p>
-        <p class="cb-problem__hint">Sleep ze gerust opzij. Ze blijven toch liggen.</p>
+        <h3>Je functie</h3>
+        <ul class="bw-tags">
+          <li>Eigenaar of directie</li><li>Calculator</li><li>Werkvoorbereider</li><li>Projectleider</li><li>Inkoper</li><li>Binnendienst</li>
+        </ul>
       </div>
-      <ul class="cb-problem__desk" role="list">
-        <li class="cb-problem__note" style="--x:2%;--y:6%;--r:-3.5deg">
-          <p class="cb-problem__q">Offertes van leveranciers regel voor regel naast de begroting leggen. Voordat je kunt inkopen, ben je een middag verder.</p>
-          <span class="cb-problem__tag">Calculatie en inkoop</span>
-        </li>
-        <li class="cb-problem__note" style="--x:34%;--y:42%;--r:2.5deg">
-          <p class="cb-problem__q">Uit een getekende opdracht een planning maken. Elke keer weer met de hand, voor elk project opnieuw.</p>
-          <span class="cb-problem__tag">Werkvoorbereiding</span>
-        </li>
-        <li class="cb-problem__note" style="--x:62%;--y:4%;--r:-1.5deg">
-          <p class="cb-problem__q">Meerwerk van de bouwplaats verwerken, doorrekenen en netjes naar de klant sturen. Meestal na werktijd.</p>
-          <span class="cb-problem__tag">Projectadministratie</span>
-        </li>
+      <div>
+        <h3>Je bedrijf</h3>
+        <ul class="bw-tags">
+          <li>Aannemer</li><li>Installateur</li><li>Afbouw</li><li>Dak en gevel</li><li>Bouwtoelevering</li>
+        </ul>
+      </div>
+      <p class="bw-niet"><b>Niet voor jou</b> als je alleen wilt kijken wat AI kan. Je bouwt twee dagen zelf, aan je eigen werk.</p>
+    </div>
+  </div>
+</section>
+
+<section class="cb-section cb-section--blok bw-sec">
+  <div class="cb-wrap">
+    <div class="bw-head">
+      <p class="bw-label">Wat je gaat bouwen</p>
+      <h2 class="bw-title">Je kiest één proces. <em>Daar bouw je de oplossing voor.</em></h2>
+      <p class="bw-lead">Dit zijn de processen waar bouwbedrijven het vaakst mee komen. Waar het al eens gebouwd is, staat erbij wat het opleverde.</p>
+    </div>
+    <div class="bw-procs">
+      <article class="bw-proc">
+        <span class="bw-proc__tag">Calculatie</span>
+        <h3>Offertes van leveranciers vergelijken met je begroting</h3>
+        <p class="bw-proc__proof">“Dan maakt hij automatisch een offertevergelijk.” <span>J.G. Timmer</span></p>
+      </article>
+      <article class="bw-proc">
+        <span class="bw-proc__tag">Werkvoorbereiding</span>
+        <h3>Van getekende opdracht naar een planning</h3>
+        <p class="bw-proc__proof">“De planning komt er echt feilloos uit.” <span>J.G. Timmer</span></p>
+      </article>
+      <article class="bw-proc">
+        <span class="bw-proc__tag">Inkoop</span>
+        <h3>Prijslijsten van leveranciers koppelen en bijwerken</h3>
+        <p class="bw-proc__proof">“Van bijna vijf ochtenden naar minder dan een half uur.” <span>Kobout</span></p>
+      </article>
+      <article class="bw-proc">
+        <span class="bw-proc__tag">Kwaliteit</span>
+        <h3>Controlewerk op tekeningen, lijsten en orders</h3>
+        <p class="bw-proc__proof">“Van een uur naar een kwartier.” <span>Hardeman van Harten</span></p>
+      </article>
+      <article class="bw-proc">
+        <span class="bw-proc__tag">Projectadministratie</span>
+        <h3>Meer- en minderwerk verwerken en doorrekenen</h3>
+        <p class="bw-proc__hint">Jouw voorbeeld kan hier straks staan.</p>
+      </article>
+      <article class="bw-proc">
+        <span class="bw-proc__tag">Veiligheid</span>
+        <h3>V&amp;G-plannen en werkinstructies per project</h3>
+        <p class="bw-proc__hint">Jouw voorbeeld kan hier straks staan.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="cb-section bw-sec" id="programma">
+  <div class="cb-wrap">
+    <div class="bw-head">
+      <p class="bw-label">De twee dagen</p>
+      <h2 class="bw-title">Twee dinsdagen, <em>met een week ertussen.</em></h2>
+      <p class="bw-lead">Twee dagen achter elkaar weg is in de bouw lastig. Nu mis je één dag per week, en test je tussendoor in je echte werk wat je bouwde.</p>
+    </div>
+    <ol class="bw-line">
+      <li class="bw-step bw-step--dag">
+        <span class="bw-step__when">Dinsdag 23 maart</span>
+        <h3>Kiezen en uittekenen</h3>
+        <ul><li>Je tijdvreters op tafel, met de uren erbij</li><li>Je kiest het proces dat je aanpakt</li><li>Je tekent uit hoe Claude aansluit op je mail, calculatie of planning</li></ul>
+        <p class="bw-step__out">Je gaat naar huis met een bouwtekening voor je oplossing.</p>
+      </li>
+      <li class="bw-step">
+        <span class="bw-step__when">De week ertussen</span>
+        <h3>Testen op de zaak</h3>
+        <p>Je gebruikt wat je op dag 1 maakte in je gewone werk. Wat schuurt of ontbreekt, neem je mee.</p>
+        <p class="bw-step__out">Je komt terug met echte knelpunten.</p>
+      </li>
+      <li class="bw-step bw-step--dag">
+        <span class="bw-step__when">Dinsdag 30 maart</span>
+        <h3>Bouwen, koppelen, live</h3>
+        <ul><li>Claude inrichten voor jouw bedrijf en werkwijze</li><li>Koppelen aan de software die je al gebruikt</li><li>Testen en bijschaven tot het werkt</li></ul>
+        <p class="bw-step__out">Je gaat naar huis met een werkende AI-toepassing.</p>
+      </li>
+      <li class="bw-step bw-step--na">
+        <span class="bw-step__when">Daarna</span>
+        <h3>30 dagen mailsupport</h3>
+        <p>Je neemt de prompt library, templates en je kansenkaart mee. Loop je vast, dan mail je ons.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="cb-section cb-section--blok bw-sec">
+  <div class="cb-wrap bw-split bw-split--tafel">
+    <div class="bw-tafel" aria-hidden="true">
+      <div class="bw-tafel__blad"><b>10</b><span>bouwbedrijven</span></div>
+      <i style="--a:0deg"></i><i style="--a:36deg"></i><i style="--a:72deg"></i><i style="--a:108deg"></i><i style="--a:144deg"></i><i style="--a:180deg"></i><i style="--a:216deg"></i><i style="--a:252deg"></i><i style="--a:288deg"></i><i style="--a:324deg"></i>
+    </div>
+    <div>
+      <p class="bw-label">Samen bouwen</p>
+      <h2 class="bw-title">Je zit aan tafel met <em>mensen die jouw werk kennen.</em></h2>
+      <p class="bw-lead">Alleen met AI aan de slag gaan is lastig. Je weet niet wat kan en niemand kijkt mee. Hier zit je met vakgenoten die tegen hetzelfde aanlopen.</p>
+      <ul class="bw-punten">
+        <li><b>Sparren zonder uitleg.</b> Iedereen kent het verschil tussen een begroting en een calculatie. Je hoeft niets uit te leggen.</li>
+        <li><b>Tien oplossingen in plaats van één.</b> Iedereen bouwt aan zijn eigen proces. Je ziet negen andere oplossingen ontstaan en neemt er een paar mee.</li>
+        <li><b>Veel begeleiding.</b> Met maximaal tien mensen lopen we bij iedereen langs. Niemand gaat naar huis met iets dat half werkt.</li>
       </ul>
     </div>
-    <p class="cb-problem__outro">Je kiest er één. Het proces dat jou nu de meeste uren kost, <span class="cb-red">is het proces waar je in twee dagen een oplossing voor bouwt.</span></p>
   </div>
 </section>
 
-<section class="cb-section cb-section--blok" id="programma">
+<section class="cb-section bw-sec">
   <div class="cb-wrap">
-    <div class="cb-sec-head">
-      <div></div>
-      <div>
-        <h2 class="cb-sec-title">Dag 1 de bouwtekening, <em>dag 2 de bouw.</em></h2>
-      </div>
+    <div class="bw-head">
+      <p class="bw-label">Uit de praktijk</p>
+      <h2 class="bw-title">Wat bouwers zeggen <em>na het bouwen.</em></h2>
     </div>
-    <div class="cb-phases cb-phases--vier">
-      <div class="cb-phase">
-        <div class="cb-phase__photo"><img class="cb-phase__img" src="img/Niels-Sonneveld-commonbase2.DN-PWsMA_18XjQ1.webp" alt="Niels Sonneveld geeft uitleg tijdens een sessie" width="800" height="800" loading="lazy" decoding="async" /><span class="cb-phase__nummer" aria-label="Stap 1">1</span></div>
-        <h3 class="cb-phase__title">Dinsdag 23 maart: kiezen en uittekenen</h3>
-        <p class="cb-phase__body">Je zet je grootste tijdvreters op tafel, kiest er één en tekent uit hoe Claude aansluit op je mail, calculatie of planning.</p>
-      </div>
-      <div class="cb-phase">
-        <div class="cb-phase__photo"><img class="cb-phase__img" src="img/Afbeeldingen-CommonBase3.BKsDzxOD_aCnSB.webp" alt="Deelnemers aan het werk tijdens een sessie van CommonBase" width="800" height="800" loading="lazy" decoding="async" /><span class="cb-phase__nummer" aria-label="Stap 2">2</span></div>
-        <h3 class="cb-phase__title">De week ertussen: testen op de zaak</h3>
-        <p class="cb-phase__body">Je gebruikt wat je op dag 1 maakte in je gewone werk. Wat nog schuurt, neem je mee naar dag 2.</p>
-      </div>
-      <div class="cb-phase">
-        <div class="cb-phase__photo"><img class="cb-phase__img" src="img/1769080164266.R30uy-K__b8n9R.webp" alt="Presentatie over AI voor een groep ondernemers" width="800" height="800" loading="lazy" decoding="async" /><span class="cb-phase__nummer" aria-label="Stap 3">3</span></div>
-        <h3 class="cb-phase__title">Dinsdag 30 maart: bouwen en live</h3>
-        <p class="cb-phase__body">Je richt Claude in voor jouw bedrijf, koppelt het aan de software die je al gebruikt en test tot het werkt.</p>
-      </div>
-      <div class="cb-phase">
-        <div class="cb-phase__photo"><img class="cb-phase__img" src="img/ai-bootcamp-groep-certificaten-tipi.DRtBFRMA_cKoF2.webp" alt="Deelnemers van een eerdere tweedaagse met hun certificaten" width="800" height="800" loading="lazy" decoding="async" /><span class="cb-phase__nummer" aria-label="Stap 4">4</span></div>
-        <h3 class="cb-phase__title">Daarna: verder op eigen kracht</h3>
-        <p class="cb-phase__body">Je neemt de prompts, templates en je kansenkaart mee naar huis. Loop je vast, dan mail je ons. Dertig dagen lang.</p>
-      </div>
-    </div>
-    <div class="cb-gebruik__punten cb-bouw-punten">
-      <div><b>Sparren met vakgenoten</b><p>Aannemers, installateurs, calculators en werkvoorbereiders. Ze kennen jouw processen, dus je hoeft niets uit te leggen.</p></div>
-      <div><b>Tien oplossingen in plaats van één</b><p>Iedereen bouwt aan zijn eigen proces. Je ziet negen andere oplossingen ontstaan en neemt er een paar mee naar huis.</p></div>
-      <div><b>Een week ertussen</b><p>Twee dagen achter elkaar weg is in de bouw lastig. Nu mis je één dag per week, en test je tussendoor in je echte werk.</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="cb-section cb-section--blok">
-  <div class="cb-wrap">
-    <div class="cb-sec-head">
-      <div></div>
-      <div>
-        <h2 class="cb-sec-title">Wat bouwbedrijven zeggen <em>na het bouwen.</em></h2>
-      </div>
-    </div>
-    <div class="cb-ervaringen">
+    <div class="bw-quotes">
       <figure class="cb-ervaring cb-ervaring--donker">
         <blockquote>&#8220;Ik was de grootste scepticus, maar ik vind het goud.&#8221;</blockquote>
         <figcaption><span><b>Dirk-Jan Polman</b>, directie, Polman Bouwbedrijf</span><img src="img/polman-bouwbedrijf.Ds-CSla8_Z1aYF0E.webp" alt="Polman Bouwbedrijf" width="54" height="40" loading="lazy" decoding="async" /></figcaption>
       </figure>
-      <div class="cb-ervaringen__raster">
-        <figure class="cb-ervaring">
-          <blockquote>&#8220;De planning komt er echt feilloos uit.&#8221;</blockquote>
-          <figcaption><span><b>Werkvoorbereiding</b>, bouwgroep J.G. Timmer</span></figcaption>
-        </figure>
-        <figure class="cb-ervaring">
-          <blockquote>&#8220;Prijslijsten koppelen: van bijna vijf ochtenden naar minder dan een half uur.&#8221;</blockquote>
-          <figcaption><span><b>Binnendienst</b>, Kobout</span><img src="img/kobout.B167nUzN_Z28NCf3.webp" alt="Kobout" width="100" height="26" loading="lazy" decoding="async" /></figcaption>
-        </figure>
-        <figure class="cb-ervaring">
-          <blockquote>&#8220;Dan maakt hij automatisch een offertevergelijk.&#8221;</blockquote>
-          <figcaption><span><b>Calculatie</b>, bouwgroep J.G. Timmer</span></figcaption>
-        </figure>
-        <figure class="cb-ervaring">
-          <blockquote>&#8220;Controlewerk van een uur naar een kwartier.&#8221;</blockquote>
-          <figcaption><span><b>Hardeman van Harten</b>, dak- en wandbeplating</span><img src="img/hardeman-van-harten.CTg0kmqY_Z233zJz.webp" alt="Hardeman van Harten" width="82" height="30" loading="lazy" decoding="async" /></figcaption>
-        </figure>
-      </div>
-    </div>
-    <div class="cb-google">
-      <a class="cb-google__badge" href="https://maps.google.com/?cid=5094671053811941945" rel="noopener" target="_blank">
-        <span class="cb-google__cijfer">5,0</span>
-        <span class="cb-google__sterren" aria-label="5 van 5 sterren"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="#FBBC04" d="M12 2.5l2.9 6.1 6.7.8-4.9 4.6 1.3 6.6L12 17.3l-6 3.3 1.3-6.6L2.4 9.4l6.7-.8z"/></svg><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="#FBBC04" d="M12 2.5l2.9 6.1 6.7.8-4.9 4.6 1.3 6.6L12 17.3l-6 3.3 1.3-6.6L2.4 9.4l6.7-.8z"/></svg><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="#FBBC04" d="M12 2.5l2.9 6.1 6.7.8-4.9 4.6 1.3 6.6L12 17.3l-6 3.3 1.3-6.6L2.4 9.4l6.7-.8z"/></svg><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="#FBBC04" d="M12 2.5l2.9 6.1 6.7.8-4.9 4.6 1.3 6.6L12 17.3l-6 3.3 1.3-6.6L2.4 9.4l6.7-.8z"/></svg><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="#FBBC04" d="M12 2.5l2.9 6.1 6.7.8-4.9 4.6 1.3 6.6L12 17.3l-6 3.3 1.3-6.6L2.4 9.4l6.7-.8z"/></svg></span>
-        <span class="cb-google__tekst"><b>Google-reviews</b><span>Lees alle reviews &rarr;</span></span>
-      </a>
-      <a class="cb-google__link" href="https://commonbase.nl/cases/">Lees alle klantervaringen <span class="arrow">&rarr;</span></a>
+      <figure class="cb-ervaring">
+        <blockquote>&#8220;Nu kunnen ze hem gelijk meenemen.&#8221;</blockquote>
+        <p class="bw-quote__body">Normaal moet een klant twee weken op een ontwerp wachten. Nu geef ik de maten door en rolt er een 3D-tekening uit.</p>
+        <figcaption><span><b>Verkoop</b>, bouwgroep J.G. Timmer</span></figcaption>
+      </figure>
     </div>
   </div>
 </section>
 
-<section class="cb-section cb-contact-block" id="boeken">
+<section class="cb-section cb-section--blok bw-sec">
   <div class="cb-wrap">
-    <div class="cb-contact-grid">
-      <form class="cb-form" method="post" action="https://ceerem.commonbase.nl/api/forms/website-contact" id="cb-contact-form" novalidate>
-        <div style="position:absolute;left:-9999px;" aria-hidden="true"><label>Laat dit veld leeg <input type="text" name="website" tabindex="-1" autocomplete="off" /></label></div>
-        <div class="cb-form-main">
-          <h2>Reserveer je plek.</h2>
-          <p class="cb-bouw-editie"><b>Dinsdag 23 en dinsdag 30 maart 2027</b> · maximaal 10 plekken</p>
-          <div class="cb-form-row">
-            <div class="cb-form-field"><label for="cb-f-firstname">Voornaam</label><input id="cb-f-firstname" type="text" name="first_name" required autocomplete="given-name" placeholder="Anna" /></div>
-            <div class="cb-form-field"><label for="cb-f-lastname">Achternaam</label><input id="cb-f-lastname" type="text" name="last_name" required autocomplete="family-name" placeholder="Jansen" /></div>
-          </div>
-          <div class="cb-form-row">
-            <div class="cb-form-field"><label for="cb-f-email">Werkmail</label><input id="cb-f-email" type="email" name="email" required autocomplete="email" placeholder="anna@bedrijf.nl" /></div>
-            <div class="cb-form-field"><label for="cb-f-phone">Telefoon</label><input id="cb-f-phone" type="tel" name="phone" required autocomplete="tel" placeholder="06 12 34 56 78" /></div>
-          </div>
-          <div class="cb-form-row">
-            <div class="cb-form-field"><label for="cb-f-company">Bedrijf</label><input id="cb-f-company" type="text" name="company" required autocomplete="organization" placeholder="Bouwbedrijf B.V." /></div>
-            <div class="cb-form-field"><label for="cb-f-persons">Met hoeveel personen?</label><select id="cb-f-persons" name="persons"><option>1 persoon</option><option>2 personen</option><option>3 personen</option></select></div>
-          </div>
-          <div class="cb-form-field"><label for="cb-f-note">Welk proces kost jou nu de meeste tijd?</label><textarea id="cb-f-note" name="note" placeholder="Bijvoorbeeld: offertes van leveranciers vergelijken met de begroting"></textarea></div>
-          <input type="hidden" name="name" id="cb-f-name" />
-          <input type="hidden" name="message" id="cb-f-message" />
-          <p class="cb-form-error" role="alert" hidden></p>
-          <button type="submit" class="cb-btn cb-btn--primary">Reserveer mijn plek <span class="arrow">&rarr;</span></button>
-          <p class="cb-form-note">Na je aanmelding bellen we je voor een korte intake. Daarna krijg je de factuur. We gebruiken je gegevens alleen om contact met je op te nemen. Lees onze <a href="https://commonbase.nl/privacy/">privacyverklaring</a>.</p>
-        </div>
-        <div class="cb-form-success">
-          <div class="cb-form-success__ok">&#10003;</div>
-          <h3>Je aanmelding is binnen.</h3>
-          <p>We bellen je binnen 1 werkdag voor een korte intake. Daarna krijg je de bevestiging en de factuur.</p>
-        </div>
-      </form>
-      <div class="cb-side">
-        <figure class="cb-lp-founders-photo"><img decoding="async" src="img/lucas-niels.C3g_RUOp_2bvtRK.webp" alt="Lucas en Niels, de oprichters van CommonBase" width="1672" height="941" /><figcaption><b>Lucas en Niels</b>begeleiden beide dagen</figcaption></figure>
-        <div class="cb-side-card">
-          <span class="cb-side-card__ttl">Investering</span>
-          <div class="cb-side-card__clock">€1.250<span class="u"> ex btw p.p.</span></div>
-          <p>Twee volle dagen begeleiding in een groep van maximaal tien. Je gaat naar huis met een werkende AI-toepassing, de prompt library en templates, een certificaat en 30 dagen mailsupport.</p>
-          <p><b>Past het niet, dan geld terug.</b> Blijkt na de intake dat de tweedaagse niet bij jouw processen past, dan krijg je het volledige bedrag terug.</p>
-        </div>
-      </div>
+    <div class="bw-head">
+      <p class="bw-label">Je begeleiders</p>
+      <h2 class="bw-title">Je bouwt met <em>de oprichters.</em></h2>
+    </div>
+    <div class="bw-team">
+      <figure class="bw-person"><img src="img/1666706984606-2.ChfJay7y_ZrmIQx.webp" alt="Lucas Doornhein" width="400" height="400" loading="lazy" decoding="async" /><figcaption><b>Lucas Doornhein</b><span>Oprichter</span><p>Ex-CMO. Weet hoe taai het is om mensen mee te krijgen in verandering, en zorgt dat de techniek niet afschrikt.</p></figcaption></figure>
+      <figure class="bw-person"><img src="img/Niels-Sonneveld-LinkedIn-portet.D5vWTgsV_1gX6TA.webp" alt="Niels Sonneveld" width="400" height="400" loading="lazy" decoding="async" /><figcaption><b>Niels Sonneveld</b><span>Oprichter</span><p>15 jaar ondernemer. Ziet AI niet als een software-update, maar als een andere manier van werken.</p></figcaption></figure>
     </div>
   </div>
 </section>
 
-<section class="cb-section cb-section--krap-boven">
-  <div class="cb-wrap">
-    <div class="cb-sec-head">
-      <div></div>
-      <div>
-        <h2 class="cb-sec-title cb-sec-title--klein">Vragen die je <em>vast hebt.</em></h2>
-      </div>
+<section class="cb-section bw-sec" id="aanmelden">
+  <div class="cb-wrap bw-book">
+    <div class="bw-prakt">
+      <p class="bw-label">Aanmelden</p>
+      <h2 class="bw-title">Reserveer je plek <em>voor 23 en 30 maart.</em></h2>
+      <dl class="bw-prakt__list">
+        <div><dt>Data</dt><dd>Dinsdag 23 en dinsdag 30 maart 2027, twee volle dagen</dd></div>
+        <div><dt>Groep</dt><dd>Maximaal 10 deelnemers, allemaal uit de bouw</dd></div>
+        <div><dt>Investering</dt><dd>€1.250 ex btw per persoon</dd></div>
+        <div><dt>Inbegrepen</dt><dd>Begeleiding op beide dagen, prompt library en templates, certificaat en 30 dagen mailsupport</dd></div>
+        <div><dt>Zelf regelen</dt><dd>Een laptop en een Claude Max-abonnement. En je eigen bestanden: offertes, begrotingen, planningen</dd></div>
+        <div><dt>Zo gaat het</dt><dd>Je meldt je aan, wij bellen je voor een korte intake, daarna krijg je de factuur</dd></div>
+      </dl>
+      <p class="bw-garantie"><b>Past het niet, dan geld terug.</b> Blijkt na de intake dat de tweedaagse niet bij jouw processen past, dan krijg je het volledige bedrag terug.</p>
     </div>
-    <div class="cb-faqs">
+    <form class="cb-form bw-form" method="post" action="https://ceerem.commonbase.nl/api/forms/website-contact" id="cb-contact-form" novalidate>
+      <div style="position:absolute;left:-9999px;" aria-hidden="true"><label>Laat dit veld leeg <input type="text" name="website" tabindex="-1" autocomplete="off" /></label></div>
+      <div class="cb-form-main">
+        <h3 class="bw-form__title">Meld je aan</h3>
+        <p class="bw-form__sub">Het duurt een minuut. Je zit pas vast na de intake.</p>
+        <div class="cb-form-row">
+          <div class="cb-form-field"><label for="cb-f-firstname">Voornaam</label><input id="cb-f-firstname" type="text" name="first_name" required autocomplete="given-name" placeholder="Anna" /></div>
+          <div class="cb-form-field"><label for="cb-f-lastname">Achternaam</label><input id="cb-f-lastname" type="text" name="last_name" required autocomplete="family-name" placeholder="Jansen" /></div>
+        </div>
+        <div class="cb-form-row">
+          <div class="cb-form-field"><label for="cb-f-email">Werkmail</label><input id="cb-f-email" type="email" name="email" required autocomplete="email" placeholder="anna@bedrijf.nl" /></div>
+          <div class="cb-form-field"><label for="cb-f-phone">Telefoon</label><input id="cb-f-phone" type="tel" name="phone" required autocomplete="tel" placeholder="06 12 34 56 78" /></div>
+        </div>
+        <div class="cb-form-row">
+          <div class="cb-form-field"><label for="cb-f-company">Bedrijf</label><input id="cb-f-company" type="text" name="company" required autocomplete="organization" placeholder="Bouwbedrijf B.V." /></div>
+          <div class="cb-form-field"><label for="cb-f-persons">Met hoeveel personen?</label><select id="cb-f-persons" name="persons"><option>1 persoon</option><option>2 personen</option><option>3 personen</option></select></div>
+        </div>
+        <div class="cb-form-field"><label for="cb-f-note">Welk proces kost jou nu de meeste tijd?</label><textarea id="cb-f-note" name="note" placeholder="Bijvoorbeeld: offertes van leveranciers vergelijken met de begroting"></textarea></div>
+        <input type="hidden" name="name" id="cb-f-name" />
+        <input type="hidden" name="message" id="cb-f-message" />
+        <p class="cb-form-error" role="alert" hidden></p>
+        <button type="submit" class="cb-btn cb-btn--primary">Reserveer mijn plek <span class="arrow">&rarr;</span></button>
+        <p class="cb-form-note">We gebruiken je gegevens alleen om contact met je op te nemen over deze tweedaagse. Lees onze <a href="https://commonbase.nl/privacy/">privacyverklaring</a>.</p>
+      </div>
+      <div class="cb-form-success">
+        <div class="cb-form-success__ok">&#10003;</div>
+        <h3>Je aanmelding is binnen.</h3>
+        <p>We bellen je binnen 1 werkdag voor een korte intake. Daarna krijg je de bevestiging en de factuur.</p>
+      </div>
+    </form>
+  </div>
+</section>
+
+<section class="cb-section cb-section--blok bw-sec">
+  <div class="cb-wrap">
+    <div class="bw-head">
+      <p class="bw-label">Vragen</p>
+      <h2 class="bw-title">Wat bouwbedrijven <em>ons vragen.</em></h2>
+    </div>
+    <div class="cb-faqs bw-faqs">
       <details open><summary>Moet ik technische kennis hebben?</summary><p>Nee. Je bouwt zelf, wij begeleiden. Programmeren is niet nodig. Wie een offerte kan lezen, kan dit leren.</p></details>
-      <details><summary>Waarom twee losse dinsdagen?</summary><p>Twee dagen achter elkaar weg is in de bouw lastig. Met een week ertussen mis je maar één dag per week. En je test in die week wat je bouwde, dus op dag twee los je echte problemen op.</p></details>
       <details><summary>Kan ik met een collega komen?</summary><p>Ja. Geef bij je aanmelding aan met hoeveel personen je komt. De prijs is per persoon, en iedereen bouwt aan een eigen proces.</p></details>
       <details><summary>Werkt het met onze software?</summary><p>We werken met Claude en koppelen het aan wat je al gebruikt, zoals je mail en Microsoft 365. Neem je eigen bestanden mee: offertes, begrotingen en planningen.</p></details>
-      <details><summary>Wat moet ik zelf regelen?</summary><p>Een laptop en een Claude Max-abonnement. En vooral je eigen werk: het proces dat je nu de meeste tijd kost, is het startpunt.</p></details>
+      <details><summary>Zit ik naast een concurrent?</summary><p>Iedereen komt uit de bouw, dus dat kan. Je bouwt wel aan je eigen proces en bepaalt zelf wat je deelt. Twijfel je, noem het dan in de intake.</p></details>
       <details><summary>Wat als het bij ons niet past?</summary><p>Na je aanmelding doen we een korte intake. Past de tweedaagse niet bij jouw processen, dan krijg je het volledige bedrag terug.</p></details>
     </div>
   </div>
 </section>
 
-<section class="cb-section cb-section--afsluiter">
-  <div class="cb-wrap">
-    <div class="cb-closer">
-      <figure class="cb-closer__portrait"><img src="img/Niels-Sonneveld-LinkedIn-portet.D5vWTgsV_fjjum.webp" alt="Niels Sonneveld" width="800" height="1000" loading="lazy" decoding="async" /><figcaption>Je bouwt met Niels en Lucas, de oprichters.</figcaption></figure>
-      <div class="cb-closer__copy">
-        <h2 class="cb-closer__title">Tien plekken. <em>Twee dinsdagen.</em></h2>
-        <p class="cb-closer__sub">Op 23 en 30 maart bouw je met maximaal negen andere bouwbedrijven aan je eigen AI-toepassing. Na je aanmelding bellen we je voor een korte intake, zodat we zeker weten dat het past.</p>
-        <div class="cb-closer__actions">
-          <a href="#boeken" class="cb-btn cb-btn--primary">Reserveer je plek <span class="arrow">&rarr;</span></a>
-          <a href="#programma" class="cb-closer__link">Bekijk het programma <span class="arrow">&rarr;</span></a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<div class="bw-stick" id="bw-stick" aria-hidden="true"><div><small>di 23 + di 30 maart · max. 10</small><b>€1.250 ex btw</b></div><a href="#aanmelden" class="cb-btn cb-btn--primary" tabindex="-1">Plek reserveren</a></div>
 </main><footer class="cb-footer"><div class="cb-wrap"><div class="cb-footer__cols"><div class="cb-footer__brand"><div class="cb-brand"><img class="cb-brand__mark" src="img/commonbase-mark.png" alt="" width="300" height="166" loading="lazy" decoding="async">CommonBase</div><p>Wij helpen MKB teams met AI-adoptie, geen losse tools of loze theorie maar werkende AI toepassingen in 30 dagen.</p></div><div class="cb-footer__col"><h3>Bedrijf</h3><a href="https://commonbase.nl/over-ons/">Over ons</a><a href="https://commonbase.nl/ai-voor-adviesbureaus/">Adviesbureaus</a><a href="https://commonbase.nl/ai-voor-bouw-en-installatie/">Bouw &amp; installatie</a><a href="https://commonbase.nl/ai-voor-it-partners/">IT-partners</a><a href="https://commonbase.nl/prijzen/">Prijzen</a><a href="https://commonbase.nl/kennisbank/">Kennisbank</a><a href="https://commonbase.nl/ai-adoptie-mkb/">AI-adoptie gids</a><a href="https://commonbase.nl/contact/">Contact</a><a href="https://commonbase.nl/vacature-ai-trainer/">Werken bij ons</a></div><div class="cb-footer__col"><h3>Tools &amp; Events</h3><a href="https://commonbase.nl/ai-adviesrapport/">Jouw aanpak voor AI</a><a href="https://commonbase.nl/ai-bootcamp-2026/">AI Bootcamp 2026</a></div><div class="cb-footer__col cb-footer__col--legal"><h3>Juridisch</h3><a href="https://commonbase.nl/algemene-voorwaarden/">Algemene voorwaarden</a><a href="https://commonbase.nl/privacy/">Privacyverklaring</a></div><div class="cb-footer__col"><h3>Contact</h3><a href="https://www.linkedin.com/company/commonbasenl" target="_blank" rel="noopener">LinkedIn</a><a href="https://commonbase.nl/contact/">Plan gesprek</a></div></div><div class="cb-footer__bottom"><span>&copy; 2026 CommonBase &middot; Alle rechten voorbehouden</span><span class="cb-footer__legal">KvK 87758156 &middot; BTW NL004481853B70</span></div></div></footer><script>
-(function () {
-  if (!window.matchMedia('(pointer: fine) and (min-width: 981px)').matches) return;
-  var z = 10;
-  document.querySelectorAll('.cb-problem__note').forEach(function (n) {
-    var sx = 0, sy = 0, bx = 0, by = 0;
-    n.addEventListener('pointerdown', function (e) {
-      n.setPointerCapture(e.pointerId);
-      n.classList.add('is-drag');
-      n.style.zIndex = ++z;
-      sx = e.clientX - bx; sy = e.clientY - by;
-    });
-    n.addEventListener('pointermove', function (e) {
-      if (!n.classList.contains('is-drag')) return;
-      bx = e.clientX - sx; by = e.clientY - sy;
-      n.style.setProperty('--dx', bx + 'px');
-      n.style.setProperty('--dy', by + 'px');
-    });
-    ['pointerup', 'pointercancel'].forEach(function (t) {
-      n.addEventListener(t, function () { n.classList.remove('is-drag'); });
-    });
-  });
-})();
-</script><script>
 (function () {
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches || !window.matchMedia('(pointer: fine)').matches) return;
   document.querySelectorAll('.cb-page-hero--depth').forEach(function (s) {
@@ -415,5 +466,14 @@
         err.hidden = false;
       });
   });
+})();
+(function () {
+  var stick = document.getElementById('bw-stick');
+  var hero = document.querySelector('.bw-hero'), book = document.getElementById('aanmelden');
+  if (!stick || !hero || !book || !('IntersectionObserver' in window)) return;
+  var heroIn = true, bookIn = false;
+  function upd() { stick.classList.toggle('show', !heroIn && !bookIn); }
+  new IntersectionObserver(function (e) { heroIn = e[0].isIntersecting; upd(); }).observe(hero);
+  new IntersectionObserver(function (e) { bookIn = e[0].isIntersecting; upd(); }).observe(book);
 })();
 </script></body></html>
